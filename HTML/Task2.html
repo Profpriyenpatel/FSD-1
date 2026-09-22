@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <label for="name">Applicant Name:</label><br>
+        <input type="text" id="name" name="name"
+               minlength="2" maxlength="30"
+               required autofocus>
+        <br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"
+               placeholder="Enter Email" required>
+        <br><br>
+
+        <label for="mobile">Contact Number:</label><br>
+        <input type="tel" id="mobile" name="mobile"
+               maxlength="10" required>
+        <br><br>
+
+        <label>Area of Interest:</label><br>
+        <input type="checkbox" id="html" name="interest" value="HTML">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="interest" value="CSS">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js" name="interest" value="JavaScript">
+        <label for="js">JavaScript</label>
+        <br><br>
+
+        <label for="achievement">Achievements:</label><br>
+        <textarea id="achievement" name="achievement"
+                  rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe to Newsletter</label>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+
+</body>
+</html>
