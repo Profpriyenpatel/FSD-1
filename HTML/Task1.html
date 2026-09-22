@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Registration Detail</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname"
+                   placeholder="Enter your Full Name"
+                   required autofocus>
+            <br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"
+                   minlength="8" maxlength="12" required>
+            <br><br>
+
+            <label for="interviewdate">Interview Date:</label><br>
+            <input type="date" id="interviewdate" name="interviewdate"
+                   min="2026-09-22" max="2026-09-29" required>
+            <br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" checked>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age"
+                   min="18" max="30" value="25">
+            <br><br>
+
+            <label for="city">City:</label><br>
+            <select id="city" name="city">
+                <optgroup label="Gujarat">
+                    <option>Ahmedabad</option>
+                    <option>Surat</option>
+                </optgroup>
+
+                <optgroup label="Maharashtra">
+                    <option>Pune</option>
+                    <option>Kolhapur</option>
+                </optgroup>
+            </select>
+            <br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="30">Test Message</textarea>
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
